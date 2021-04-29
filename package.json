@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevSnowflake/snowflake-studio-v2.git"
+    "url": "git+https://github.com/DevSnowflake/website.git"
   },
   "keywords": [
     "snowflake",
@@ -21,9 +21,9 @@
   "author": "Snowflake107",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DevSnowflake/snowflake-studio-v2/issues"
+    "url": "https://github.com/DevSnowflake/website/issues"
   },
-  "homepage": "https://github.com/DevSnowflake/snowflake-studio-v2#readme",
+  "homepage": "https://github.com/DevSnowflake/website#readme",
   "dependencies": {
     "next": "^10.2.0",
     "next-pwa": "^5.2.15",
