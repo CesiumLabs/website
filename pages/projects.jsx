@@ -33,7 +33,7 @@ export default class Projects extends Component {
                                             <div className="flex justify-center lg:justify-start mt-6">
                                                 <a
                                                     className="mx-4 px-6 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded-sm hover:bg-gray-400"
-                                                    href={m.github}
+                                                    href={`https://github.com/${m.github}`}
                                                 >
                                                     GitHub
                                                 </a>
