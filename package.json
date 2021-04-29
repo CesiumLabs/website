@@ -1,0 +1,39 @@
+{
+  "name": "snowflake-studio",
+  "version": "2.0.0",
+  "description": "Official website of Snowflake Studio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write \"pages/**/*.{ts,tsx,js,jsx}\" \"components/**/*.{ts,tsx,js,jsx}\" *.{js,ts}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSnowflake/snowflake-studio-v2.git"
+  },
+  "keywords": [
+    "snowflake",
+    "snowflake-studio",
+    "website"
+  ],
+  "author": "Snowflake107",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevSnowflake/snowflake-studio-v2/issues"
+  },
+  "homepage": "https://github.com/DevSnowflake/snowflake-studio-v2#readme",
+  "dependencies": {
+    "next": "^10.2.0",
+    "next-pwa": "^5.2.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
