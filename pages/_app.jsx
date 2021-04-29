@@ -21,21 +21,36 @@ export default function Application({ Component, pageProps }) {
                 />
 
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-                <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+                <meta
+                    name="viewport"
+                    content="width=device-width,initial-scale=1.0"
+                />
 
                 <meta property="og:url" content="https://snowflakedev.xyz" />
                 <meta property="og:title" content="Snowflake Studio ❄" />
-                <meta property="og:description" content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!" />
+                <meta
+                    property="og:description"
+                    content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!"
+                />
                 <meta property="og:image" content="/images/logo.png" />
 
                 <meta property="url" content="https://snowflakedev.xyz" />
                 <meta property="title" content="Snowflake Studio ❄" />
-                <meta property="description" content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!" />
+                <meta
+                    property="description"
+                    content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!"
+                />
                 <meta property="image" content="/images/logo.png" />
 
-                <meta property="twitter:url" content="https://snowflakedev.xyz" />
+                <meta
+                    property="twitter:url"
+                    content="https://snowflakedev.xyz"
+                />
                 <meta property="twitter:title" content="Snowflake Studio ❄" />
-                <meta property="twitter:description" content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!" />
+                <meta
+                    property="twitter:description"
+                    content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!"
+                />
                 <meta property="twitter:image" content="/images/logo.png" />
 
                 <title>Snowflake Studio ❄</title>

@@ -4,7 +4,6 @@ import { Component } from "react";
 import { PROJECTS } from "../config";
 
 export default class Projects extends Component {
-
     render() {
         return (
             <div className="bg-gray-900">
@@ -21,11 +20,15 @@ export default class Projects extends Component {
                                 </div>
                             </div>
                             <div class="flex flex-wrap -m-4">
-                               {
-                                    PROJECTS.map((m, i) => <div key={i} class="lg:w-1/3 w-full p-4">
+                                {PROJECTS.map((m, i) => (
+                                    <div key={i} class="lg:w-1/3 w-full p-4">
                                         <div class="border border-gray-300 p-6 rounded-lg">
-                                            <h2 class="text-lg  font-medium title-font mb-2">{m.name}</h2>
-                                            <p class="leading-relaxed text-base">{m.description}</p>
+                                            <h2 class="text-lg  font-medium title-font mb-2">
+                                                {m.name}
+                                            </h2>
+                                            <p class="leading-relaxed text-base">
+                                                {m.description}
+                                            </p>
 
                                             <div className="flex justify-center lg:justify-start mt-6">
                                                 <a
@@ -41,10 +44,9 @@ export default class Projects extends Component {
                                                     Documentation
                                                 </a>
                                             </div>
-
                                         </div>
-                                    </div>)
-                               }
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </section>

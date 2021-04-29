@@ -47,7 +47,7 @@ export default class Team extends Component {
                                     <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                                 </div>
                             </div>
-                                <div class="flex flex-wrap -m-4">
+                            <div class="flex flex-wrap -m-4">
                                 {this.state.staffs?.length ? (
                                     this.state.staffs
                                         .sort(
