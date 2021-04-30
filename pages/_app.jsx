@@ -53,7 +53,10 @@ export default function Application({ Component, pageProps }) {
                 />
                 <meta property="twitter:image" content="/images/logo.png" />
 
-                <script async src="https://arc.io/widget.min.js#6TjnmPuK"></script>
+                <script
+                    async
+                    src="https://arc.io/widget.min.js#6TjnmPuK"
+                ></script>
 
                 <title>Snowflake Studio ❄</title>
             </Head>

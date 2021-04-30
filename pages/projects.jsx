@@ -21,7 +21,10 @@ export default class Projects extends Component {
                             </div>
                             <div className="flex flex-wrap -m-4">
                                 {PROJECTS.map((m, i) => (
-                                    <div key={i} className="lg:w-1/3 w-full p-4">
+                                    <div
+                                        key={i}
+                                        className="lg:w-1/3 w-full p-4"
+                                    >
                                         <div className="border border-gray-300 p-6 rounded-lg">
                                             <h2 className="text-lg  font-medium title-font mb-2">
                                                 {m.name}
