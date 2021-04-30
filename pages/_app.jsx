@@ -37,7 +37,7 @@ export default function Application({ Component, pageProps }) {
                 <meta property="url" content="https://snowflakedev.xyz" />
                 <meta property="title" content="Snowflake Studio ❄" />
                 <meta
-                    property="description"
+                    name="description"
                     content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!"
                 />
                 <meta property="image" content="/images/logo.png" />

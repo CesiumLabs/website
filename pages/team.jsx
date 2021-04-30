@@ -37,17 +37,17 @@ export default class Team extends Component {
 
                 <Navbar />
                 <div>
-                    <section class="text-gray-200 bg-gray-900 min-h-screen">
-                        <div class="max-w-6xl mx-auto px-5 py-24 ">
-                            <div class="text-center mb-20">
-                                <h1 class=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
+                    <section className="text-gray-200 bg-gray-900 min-h-screen">
+                        <div className="max-w-6xl mx-auto px-5 py-24 ">
+                            <div className="text-center mb-20">
+                                <h1 className=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
                                     Team
                                 </h1>
-                                <div class="flex mt-6 justify-center">
-                                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                                <div className="flex mt-6 justify-center">
+                                    <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap -m-4">
+                            <div className="flex flex-wrap -m-4">
                                 {this.state.staffs?.length ? (
                                     this.state.staffs
                                         .sort(
