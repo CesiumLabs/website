@@ -18,7 +18,7 @@ export default class Team extends Component {
             .then((data) => {
                 this.setState({ staffs: data.data ?? [], loading: false });
             })
-            .catch((e) => {
+            .catch(() => {
                 this.setState({ staffs: [], loading: false });
             });
     }
