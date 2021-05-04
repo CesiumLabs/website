@@ -61,7 +61,10 @@ export default class Team extends Component {
                                                 image={m.avatar}
                                                 title={m.username}
                                                 description={
-                                                    m.admin
+                                                    m.id ===
+                                                    "735446893152305192"
+                                                        ? "Founder"
+                                                        : m.admin
                                                         ? "Administrator"
                                                         : "Moderator"
                                                 }
