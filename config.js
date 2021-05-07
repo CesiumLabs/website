@@ -48,5 +48,12 @@ module.exports = {
             docs: "https://github.com/DevSnowflake/youtube-sr",
             description: "Simple package to make youtube search.",
         },
+        {
+            name: "JSON SQL Query",
+            github: "DevSnowflake/json-sql-query",
+            npm: "json-sql-query",
+            docs: "https://github.com/DevSnowflake/json-sql-query",
+            description: "Execute CRUD operations on JSON using SQL query!",
+        },
     ],
 };
