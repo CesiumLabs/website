@@ -13,7 +13,7 @@ export default class Team extends Component {
     }
 
     componentDidMount() {
-        fetch("https://api.snowflakedev.xyz/api/d/staffs")
+        fetch("https://api2.snowflakedev.xyz/api/d/staffs")
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ staffs: data.data ?? [], loading: false });
