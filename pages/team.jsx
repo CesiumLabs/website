@@ -44,7 +44,7 @@ export default class Team extends Component {
                                     Team
                                 </h1>
                                 <div className="flex mt-6 justify-center">
-                                    <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                                        <div className="w-16 h-1 rounded-full blurple inline-flex"></div>
                                 </div>
                             </div>
                             <div className="flex flex-wrap -m-4">

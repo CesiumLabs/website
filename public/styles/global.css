@@ -8,6 +8,18 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+.blurple {
+  background-color: #5865F2 !important;
+}
+
+.blurple-txt {
+  color: #5865F2 !important;
+}
+
+.blurple:hover {
+  background-color: #4250eb !important;
+}
+
 ::selection, ::-moz-selection {
   color: #FFFFFF;
   background: #3182ce;

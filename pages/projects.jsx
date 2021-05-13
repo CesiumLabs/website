@@ -16,7 +16,7 @@ export default class Projects extends Component {
                                     Projects
                                 </h1>
                                 <div className="flex mt-6 justify-center">
-                                    <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                                    <div className="w-16 h-1 rounded-full blurple inline-flex"></div>
                                 </div>
                             </div>
                             <div className="flex flex-wrap -m-4">
@@ -41,7 +41,7 @@ export default class Projects extends Component {
                                                     GitHub
                                                 </a>
                                                 <a
-                                                    className="mx-4 px-6 py-3 bg-blue-500 text-gray-200 text-xs font-semibold rounded-sm hover:bg-blue-600"
+                                                    className="mx-4 px-6 py-3 blurple text-gray-200 text-xs font-semibold rounded-sm"
                                                     href={m.docs}
                                                 >
                                                     Documentation

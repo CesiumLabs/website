@@ -42,7 +42,7 @@ export default class Home extends Component {
                             />
                             <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl">
                                 Welcome To{" "}
-                                <span className="text-indigo-600">
+                                <span className="blurple-txt">
                                     Snowflake Studio
                                 </span>
                             </h2>
@@ -60,7 +60,7 @@ export default class Home extends Component {
                                     GitHub
                                 </a>
                                 <a
-                                    className="mx-4 px-6 py-3 bg-blue-500 text-gray-200 text-xs font-semibold rounded-sm hover:bg-blue-600"
+                                    className="mx-4 px-6 py-3 blurple text-gray-200 text-xs font-semibold rounded-sm"
                                     href={LINKS.DISCORD}
                                 >
                                     Discord
@@ -79,7 +79,7 @@ export default class Home extends Component {
                             <div>
                                 <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl">
                                     Welcome To{" "}
-                                    <span className="text-indigo-600">
+                                    <span className="blurple-txt">
                                         Snowflake Studio
                                     </span>
                                 </h2>
@@ -97,7 +97,7 @@ export default class Home extends Component {
                                         GitHub
                                     </a>
                                     <a
-                                        className="mx-4 px-6 py-3 bg-blue-500 text-gray-200 text-xs font-semibold rounded-sm hover:bg-blue-600"
+                                        className="mx-4 px-6 py-3 blurple text-gray-200 text-xs font-semibold rounded-sm"
                                         href={LINKS.DISCORD}
                                     >
                                         Discord
@@ -119,7 +119,7 @@ export default class Home extends Component {
                             <div>
                                 <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl">
                                     About{" "}
-                                    <span className="text-indigo-600">
+                                    <span className="blurple-txt">
                                         Snowflake Studio
                                     </span>
                                 </h2>
@@ -146,7 +146,7 @@ export default class Home extends Component {
                     <div className="py-10">
                         <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl py-3">
                             Latest{" "}
-                            <span className="text-indigo-600">Video</span>
+                            <span className="blurple-txt">Video</span>
                         </h2>
                         <iframe
                             className="mx-auto"
