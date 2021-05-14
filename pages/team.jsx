@@ -44,7 +44,7 @@ export default class Team extends Component {
                                     Team
                                 </h1>
                                 <div className="flex mt-6 justify-center">
-                                        <div className="w-16 h-1 rounded-full blurple inline-flex"></div>
+                                    <div className="w-16 h-1 rounded-full blurple inline-flex"></div>
                                 </div>
                             </div>
                             <div className="flex flex-wrap -m-4">
@@ -58,8 +58,12 @@ export default class Team extends Component {
                                         .map((m, i) => (
                                             <Card
                                                 key={i}
-                                                image={m.avatar}
+                                                image={m.avatar.replace(
+                                                    ".png",
+                                                    ".webp"
+                                                )}
                                                 title={m.username}
+                                                uid={m.id}
                                                 description={
                                                     m.id ===
                                                     "735446893152305192"

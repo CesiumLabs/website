@@ -20,9 +20,9 @@ body {
   background-color: #4250eb !important;
 }
 
-::selection, ::-moz-selection {
-  color: #FFFFFF;
-  background: #3182ce;
+::selection {
+  color: #FFFFFF !important;
+  background: #5865F2 !important;
 }
 
 ::-webkit-scrollbar {

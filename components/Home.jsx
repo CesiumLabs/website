@@ -145,8 +145,7 @@ export default class Home extends Component {
                     </div>
                     <div className="py-10">
                         <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl py-3">
-                            Latest{" "}
-                            <span className="blurple-txt">Video</span>
+                            Latest <span className="blurple-txt">Video</span>
                         </h2>
                         <iframe
                             className="mx-auto"
