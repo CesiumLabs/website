@@ -4,6 +4,7 @@ import Head from "next/head";
 import Card from "../components/Card";
 import { Component } from "react";
 import Loading from "../components/Loader";
+import { TEAM_FETCH_API_BASE } from "../config";
 
 export default class Team extends Component {
     constructor(...props) {
@@ -13,7 +14,7 @@ export default class Team extends Component {
     }
 
     componentDidMount() {
-        fetch("https://api2.snowflakedev.xyz/api/d/staffs")
+        fetch(TEAM_FETCH_API_BASE)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ staffs: data.data ?? [], loading: false });
