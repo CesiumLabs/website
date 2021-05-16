@@ -57,4 +57,5 @@ module.exports = {
             description: "Execute CRUD operations on JSON using SQL query!",
         },
     ],
+    YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
 };

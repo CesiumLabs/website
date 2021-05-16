@@ -1,4 +1,4 @@
-import { LINKS } from "../config";
+import { LINKS, YOUTUBE_CHANNEL_ID } from "../config";
 import { Component } from "react";
 
 export default class Home extends Component {
@@ -7,14 +7,14 @@ export default class Home extends Component {
 
         this.state = {
             video:
-                "https://www.youtube.com/embed/Ms6yRFMk8-A?controls=1&showinfo=0&rel=0",
+                "https://www.youtube.com/embed/SYKT8r4fSCA?controls=1&showinfo=0&rel=0",
         };
     }
 
     componentDidMount() {
         fetch(
             `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(
-                "https://www.youtube.com/feeds/videos.xml?channel_id=UCvklmpoAZntoOpr7EyTierA"
+                `https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`
             )}`
         )
             .then((res) => res.json())
