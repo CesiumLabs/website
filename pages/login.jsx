@@ -15,13 +15,16 @@ export default class App extends Component {
         if (!login_code || login_code === "undefined") {
             location.href = LOGIN_URL;
         } else if (login_code && login_code !== "undefined") {
-            fetch(`https://cors-anywhere.snowflakedev.xyz/${LOGIN_API}${!["undefined", undefined].includes(new URL(window.document.location).searchParams.get("code")) ? `?code=${login_code}` : ""}`, {
-                headers: {
-                    REDIRECT_URI: window.location.toString().split("?")[0],
-                    Authorization: `Bearer ${login_code}`,
-                    origin: window.location.href,
-                    "x-requested-with": "NodeFetch",
-                },
+            const headers = {
+                REDIRECT_URI: window.location.toString().split("?")[0],
+                origin: window.location.href,
+                "x-requested-with": "NodeFetch",
+            };
+
+            if (!["undefined", undefined].includes(localStorage.getItem("access_token"))) headers["Authorization"] = `Bearer ${localStorage.getItem("access_token")}`;
+
+            fetch(`https://cors-anywhere.snowflakedev.xyz/${LOGIN_API}${!["undefined", undefined].includes(new URL(window.document.location).searchParams.get("code")) ? `?code=${new URL(window.document.location).searchParams.get("code")}` : ""}`, {
+                headers
             })
                 .then((res) => res.json())
                 .then((data) => {
