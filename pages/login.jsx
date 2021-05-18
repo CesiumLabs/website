@@ -21,9 +21,9 @@ export default class App extends Component {
                 "x-requested-with": "NodeFetch",
             };
 
-            if (!["undefined", undefined].includes(localStorage.getItem("access_token"))) headers["Authorization"] = `Bearer ${localStorage.getItem("access_token")}`;
+            if (!!localStorage.getItem("access_token")) headers["Authorization"] = `Bearer ${localStorage.getItem("access_token")}`;
 
-            fetch(`https://cors-anywhere.snowflakedev.xyz/${LOGIN_API}${!["undefined", undefined].includes(new URL(window.document.location).searchParams.get("code")) ? `?code=${new URL(window.document.location).searchParams.get("code")}` : ""}`, {
+            fetch(`https://cors-anywhere.snowflakedev.xyz/${LOGIN_API}${!!new URL(window.document.location).searchParams.get("code") ? `?code=${new URL(window.document.location).searchParams.get("code")}` : ""}`, {
                 headers
             })
                 .then((res) => res.json())
