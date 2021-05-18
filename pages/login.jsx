@@ -15,10 +15,12 @@ export default class App extends Component {
         if (!login_code || login_code === "undefined") {
             location.href = LOGIN_URL;
         } else if (login_code && login_code !== "undefined") {
-            fetch(`${window.location.origin}/api/login${!localStorage.getItem("access_token") ? `?code=${login_code}` : ""}`, {
+            fetch(`https://cors-anywhere.snowflakedev.xyz/${LOGIN_API}${!["undefined", undefined].includes(new URL(window.document.location).searchParams.get("code")) ? `?code=${login_code}` : ""}`, {
                 headers: {
                     REDIRECT_URI: window.location.toString().split("?")[0],
-                    Authorization: `${login_code}`,
+                    Authorization: `Bearer ${login_code}`,
+                    origin: window.location.href,
+                    "x-requested-with": "NodeFetch",
                 },
             })
                 .then((res) => res.json())
@@ -35,7 +37,7 @@ export default class App extends Component {
                     window.location.href = "/me";
                 })
                 .catch((e) => {
-                    window.location.href = LOGIN_URL;
+                    alert(`Login failed: ${e}`);
                 });
         }
     }
