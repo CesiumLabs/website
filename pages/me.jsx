@@ -20,12 +20,12 @@ export default function Me() {
             })
                 .then((res) => res.json())
                 .then((user) => {
-                    if (user.error && user.code == "1014") {
+                    if (!user.success && user.code == "1014") {
                         localStorage.removeItem("access_token");
                         return (window.location.href = "/login");
                     }
-                    if (!user || !user.id) return (window.location.href = "/login");
-                    setUser(user);
+                    if (!user.data || !user.data.id) return (window.location.href = "/login");
+                    setUser(user.data);
                     window.sessionStorage.setItem("user_data", "true");
                 })
                 .catch(() => {
