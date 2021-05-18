@@ -25,7 +25,8 @@ export default class App extends Component {
             })
                 .then((res) => res.json())
                 .then((data) => {
-                    data = data.data.data || data.data;
+                    data = data.data?.data || data.data || data;
+                    console.debug(`Login data: `, data);
                     if (!data || data.error) {
                         alert("Login failed, try again later");
                         setTimeout(() => {
