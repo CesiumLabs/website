@@ -6,6 +6,11 @@ module.exports = {
         { label: "Projects", path: "/projects", external: false },
         { label: "API", path: "https://api.snowflakedev.xyz", external: true },
         {
+            label: "Discord",
+            path: "https://discord.gg/uqB8kxh",
+            external: true,
+        },
+        {
             label: "GitHub",
             path: "https://github.com/DevSnowflake",
             external: true,
@@ -86,4 +91,6 @@ module.exports = {
         },
     ],
     YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
+    LOGIN_URL: `https://discord.com/api/oauth2/authorize?client_id=652874564098850826&redirect_uri=http%3A%2F%2Flocalhost:3000%2Flogin&response_type=code&scope=identify`,
+    LOGIN_API: "https://backend.snowflakedev.xyz/api/authorize",
 };

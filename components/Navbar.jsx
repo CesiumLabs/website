@@ -1,7 +1,15 @@
-import { NAV, LINKS } from "../config";
+import { NAV } from "../config";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
-export default function Navbar() {
+export default function Navbar({ login = false }) {
+    const [loggedIn, setLoggedIn] = useState(login);
+
+    useEffect(() => {
+        if (sessionStorage.getItem("user_data") && !loggedIn) setLoggedIn(true);
+        else if (!sessionStorage.getItem("user_data") && !loggedIn) setLoggedIn(false);
+    });
+
     return (
         <section>
             <nav className="relative py-6 bg-gray-800">
@@ -35,9 +43,9 @@ export default function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <a className="hidden lg:inline-block py-2 px-6 blurple text-sm text-white font-semibold rounded-sm transition duration-200" href={LINKS.DISCORD}>
-                        Discord
-                    </a>
+                    <Link href={loggedIn ? "/me" : "/login"}>
+                        <a className="hidden lg:inline-block py-2 px-6 blurple text-sm text-white font-semibold rounded-sm transition duration-200">{loggedIn ? "Profile" : "Login"}</a>
+                    </Link>
                 </div>
             </nav>
 
@@ -79,9 +87,9 @@ export default function Navbar() {
                     </div>
                     <div className="mt-auto">
                         <div className="pt-6">
-                            <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold rounded-sm blurple" href={LINKS.DISCORD}>
-                                Discord
-                            </a>
+                            <Link href={loggedIn ? "/me" : "/login"}>
+                                <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold rounded-sm blurple">{loggedIn ? "Profile" : "Login"}</a>
+                            </Link>
                         </div>
                     </div>
                 </nav>
