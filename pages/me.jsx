@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
-import { LOGIN_API } from "../config";
+import { LOGIN_API, LOGIN_URL } from "../config";
 import UserProfile from "../components/UserProfile";
 
 export default function Me() {
@@ -20,16 +20,17 @@ export default function Me() {
             })
                 .then((res) => res.json())
                 .then((user) => {
-                    if (!user.success && user.code == "1014") {
+                    if (!user.success && user.code === 1014) {
                         localStorage.removeItem("access_token");
-                        return (window.location.href = "/login");
+                        return (window.location.href = LOGIN_URL);
+                    } else {
+                        if (!user.data || !user.data.id) return (window.location.href = LOGIN_URL);
+                        setUser(user.data);
+                        window.sessionStorage.setItem("user_data", "true");
                     }
-                    if (!user.data || !user.data.id) return (window.location.href = "/login");
-                    setUser(user.data);
-                    window.sessionStorage.setItem("user_data", "true");
                 })
                 .catch(() => {
-                    window.location.href = "/login";
+                    window.location.href = LOGIN_URL;
                 });
     });
 
