@@ -29,7 +29,7 @@ export default class App extends Component {
                 .then((res) => res.json())
                 .then((data) => {
                     data = data.data?.data || data.data || data;
-                    if (!data || data.error) {
+                    if (!data || data.error || data.status === 1014) {
                         const confirmation = window.confirm("Could not validate previous session, wanna create one?");
                         if (confirmation) window.location.href = LOGIN_URL;
                         else window.location.href = "/";
