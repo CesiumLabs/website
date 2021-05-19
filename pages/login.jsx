@@ -29,13 +29,10 @@ export default class App extends Component {
                 .then((res) => res.json())
                 .then((data) => {
                     data = data.data?.data || data.data || data;
-                    console.debug(`Login data: `, data);
                     if (!data || data.error) {
-                        alert("Login failed, try again later");
-                        setTimeout(() => {
-                            window.location.href = "/";
-                        }, 2000);
-                        return;
+                        const confirmation = window.confirm("Could not validate previous session, wanna create one?");
+                        if (confirmation) window.location.href = LOGIN_URL;
+                        else window.location.href = "/";
                     }
                     if (data.accessToken) window.localStorage.setItem("access_token", data.accessToken);
                     window.location.href = "/me";
