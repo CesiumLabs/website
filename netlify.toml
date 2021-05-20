@@ -6,6 +6,12 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/uqB8kxh"
+  force = true
+  status = 200
+
+[[redirects]]
   from = "/arc-sw.js"
   to = "https://arc.io/arc-sw.js"
   status = 200
