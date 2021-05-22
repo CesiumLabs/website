@@ -2,6 +2,7 @@ import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import "../public/styles/global.css";
 import "../public/styles/loader.css";
+import { Provider } from "next-auth/client";
 
 export default function Application({ Component, pageProps }) {
     return (
@@ -35,7 +36,9 @@ export default function Application({ Component, pageProps }) {
 
                 <title>Snowflake Studio ❄</title>
             </Head>
-            <Component {...pageProps} />
+            <Provider options={{ clientMaxAge: 0, keepAlive: 0 }} session={pageProps.session}>
+                <Component {...pageProps} />
+            </Provider>
         </>
     );
 }

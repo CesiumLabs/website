@@ -1,14 +1,9 @@
 import { NAV } from "../config";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { signIn, signOut, useSession } from "next-auth/client";
 
-export default function Navbar({ login = false }) {
-    const [loggedIn, setLoggedIn] = useState(login);
-
-    useEffect(() => {
-        if (sessionStorage.getItem("user_data") && !loggedIn) setLoggedIn(true);
-        else if (!sessionStorage.getItem("user_data") && !loggedIn) setLoggedIn(false);
-    });
+export default function Navbar() {
+    const [session] = useSession();
 
     return (
         <section>
@@ -43,9 +38,18 @@ export default function Navbar({ login = false }) {
                             </li>
                         ))}
                     </ul>
-                    <Link href={loggedIn ? "/me" : "/login"}>
-                        <a className="hidden lg:inline-block py-2 px-6 blurple text-sm text-white font-semibold rounded-sm transition duration-200">{loggedIn ? "Profile" : "Login"}</a>
-                    </Link>
+                    <a
+                        className="hidden lg:inline-block py-2 px-6 blurple text-sm text-white font-semibold rounded-sm transition duration-200"
+                        href={!session ? "/api/auth/signin" : "/me"}
+                        onClick={(e) => {
+                            if (!session) {
+                                e.preventDefault();
+                                signIn();
+                            }
+                        }}
+                    >
+                        {session ? session.user.name : "Login"}
+                    </a>
                 </div>
             </nav>
 
@@ -87,9 +91,18 @@ export default function Navbar({ login = false }) {
                     </div>
                     <div className="mt-auto">
                         <div className="pt-6">
-                            <Link href={loggedIn ? "/me" : "/login"}>
-                                <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold rounded-sm blurple">{loggedIn ? "Profile" : "Login"}</a>
-                            </Link>
+                            <a
+                                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold rounded-sm blurple"
+                                href={!session ? "/api/auth/signin" : "/me"}
+                                onClick={(e) => {
+                                    if (!session) {
+                                        e.preventDefault();
+                                        signIn();
+                                    }
+                                }}
+                            >
+                                {session ? session.user.name : "Login"}
+                            </a>
                         </div>
                     </div>
                 </nav>

@@ -12,6 +12,18 @@
   status = 200
 
 [[redirects]]
+  from = "/login"
+  to = "/api/auth/signin"
+  force = true
+  status = 200
+
+[[redirects]]
+  from = "/logout"
+  to = "/api/auth/signout"
+  force = true
+  status = 200
+
+[[redirects]]
   from = "/arc-sw.js"
   to = "https://arc.io/arc-sw.js"
   status = 200

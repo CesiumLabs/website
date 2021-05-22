@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "format": "prettier --write \"pages/**/*.{ts,tsx,js,jsx}\" \"components/**/*.{ts,tsx,js,jsx}\" *.{js,ts}"
+    "format": "prettier --write **/*.{ts,tsx,js,jsx}"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/DevSnowflake/website#readme",
   "dependencies": {
     "next": "^10.2.0",
+    "next-auth": "^3.23.2",
     "next-pwa": "^5.2.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
