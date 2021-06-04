@@ -45,7 +45,17 @@ export default class Team extends Component {
                             </div>
                             <div className="flex flex-wrap -m-4">
                                 {this.state.staffs?.length ? (
-                                    this.state.staffs.sort((a, b) => a.username.charCodeAt() - b.username.charCodeAt()).map((m, i) => <Card key={i} image={m.avatar.replace(".png", ".webp")} title={m.username} uid={m.id} description={m.id === "735446893152305192" ? "Founder" : m.admin ? "Administrator" : "Moderator"} />)
+                                    this.state.staffs.sort((a, b) => a.username.charCodeAt() - b.username.charCodeAt()).map((m, i) => {
+                                        return (
+                                            <Card
+                                                key={i}
+                                                image={!m.avatar.includes("/embed/") ? m.avatar.replace(".png", ".webp") : m.avatar}
+                                                title={m.username}
+                                                uid={m.id}
+                                                description={m.id === "735446893152305192" ? "Founder" : m.admin ? "Administrator" : "Moderator"}
+                                            />
+                                        )
+                                    })
                                 ) : (
                                     <h1 className="text-gray-200 text-xl text-center">Could not fetch data!</h1>
                                 )}
