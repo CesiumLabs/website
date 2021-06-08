@@ -43,6 +43,7 @@ body {
 }
 
 .coverpg {
-    background-image: url("/images/banner.png");
-    margin-left: -12rem;
+    background-image: url("/images/logo.png");
+    background-size: cover;
+    background-position: center;
 }

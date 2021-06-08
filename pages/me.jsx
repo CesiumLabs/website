@@ -31,7 +31,7 @@ export default function Me() {
     return (
         <div className="bg-gray-900">
             <Navbar login={true} />
-            <div className="container mx-auto text-center min-h-screen">
+            <div className="container mx-auto text-center min-h-screen mb-5">
                 <UserProfile user={session.data} />
             </div>
             <Footer />

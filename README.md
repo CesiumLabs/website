@@ -1,2 +1,2 @@
 # Website
-Official website of **[Snowflake Studio ❄](https://snowflakedev.xyz)**
+Official website of **[SnowflakeDev Community ❄](https://snowflakedev.xyz)**

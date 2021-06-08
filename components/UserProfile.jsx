@@ -7,7 +7,7 @@ export default function UserProfile({ user }) {
             <div className="container mx-auto px-8">
                 <div className="px-10">
                     <div className="mb-4">
-                        <img className="rounded-lg ml-auto mr-auto" src={`${user.image_url.replace(".gif", ".webp").replace(".png", ".webp")}?size=2048`} onMouseOver={(e) => (e.target.src.includes("a_") ? (e.target.src = e.target.src.replace(".webp", ".gif")) : null)} onMouseOut={(e) => (e.target.src = e.target.src.replace(".gif", ".webp"))} draggable="false" />
+                        <img className="rounded-lg ml-auto mr-auto" src={`${user.image_url.replace(".gif", ".webp").replace(".png", ".webp")}?size=256`} onMouseOver={(e) => (e.target.src.includes("a_") ? (e.target.src = e.target.src.replace(".webp", ".gif")) : null)} onMouseOut={(e) => (e.target.src = e.target.src.replace(".gif", ".webp"))} draggable="false" />
                     </div>
                     <div className="mb-4">
                         <div className="text-3xl font-semibold text-gray-200">{user.username}</div>
