@@ -1,5 +1,5 @@
 module.exports = {
-    TEAM_FETCH_API_BASE: "https://api2.snowflakedev.cf/api/d/staffs",
+    TEAM_FETCH_API_BASE: "https://api.snowflakedev.cf/api/d/staffs",
     NAV: [
         { label: "Home", path: "/", external: false },
         { label: "Team", path: "/team", external: false },
