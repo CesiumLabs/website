@@ -1,10 +1,10 @@
 module.exports = {
-    TEAM_FETCH_API_BASE: "https://api.snowflakedev.cf/api/d/staffs",
+    TEAM_FETCH_API_BASE: "https://api.snowflakedev.org/api/d/staffs",
     NAV: [
         { label: "Home", path: "/", external: false },
         { label: "Team", path: "/team", external: false },
         { label: "Projects", path: "/projects", external: false },
-        { label: "API", path: "https://api.snowflakedev.cf", external: true },
+        { label: "API", path: "https://api.snowflakedev.org", external: true },
         {
             label: "Discord",
             path: "https://discord.gg/uqB8kxh",
@@ -91,6 +91,6 @@ module.exports = {
         },
     ],
     YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
-    LOGIN_URL: `https://discord.com/api/oauth2/authorize?client_id=652874564098850826&redirect_uri=https%3A%2F%2Fsnowflakedev.xyz%2Flogin&response_type=code&scope=identify`,
-    LOGIN_API: "https://backend.snowflakedev.xyz/api/authorize",
+    LOGIN_URL: `https://discord.com/api/oauth2/authorize?client_id=652874564098850826&redirect_uri=https%3A%2F%2Fsnowflakedev.org%2Flogin&response_type=code&scope=identify`,
+    LOGIN_API: "https://backend.snowflakedev.org/api/authorize",
 };
