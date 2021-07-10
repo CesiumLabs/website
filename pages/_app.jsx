@@ -17,22 +17,22 @@ export default function Application({ Component, pageProps }) {
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-                <meta property="og:url" content="https://snowflakedev.xyz" />
+                <meta property="og:url" content="https://snowflakedev.org" />
                 <meta property="og:title" content="SnowflakeDev Community ❄" />
                 <meta property="og:description" content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!" />
                 <meta property="og:image" content="/images/logo.png" />
 
-                <meta property="url" content="https://snowflakedev.xyz" />
+                <meta property="url" content="https://snowflakedev.org" />
                 <meta property="title" content="SnowflakeDev Community ❄" />
                 <meta name="description" content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!" />
                 <meta property="image" content="/images/logo.png" />
 
-                <meta property="twitter:url" content="https://snowflakedev.xyz" />
+                <meta property="twitter:url" content="https://snowflakedev.org" />
                 <meta property="twitter:title" content="SnowflakeDev Community ❄" />
                 <meta property="twitter:description" content="We are a community focused on programming; No matter if we know how to provide support or not we may be able to redirect you somewhere that might!" />
                 <meta property="twitter:image" content="/images/logo.png" />
 
-                <script async src="https://arc.io/widget.min.js#6TjnmPuK"></script>
+                <script async src="https://arc.io/widget.min.js#pz4jzKoL"></script>
 
                 <title>SnowflakeDev Community ❄</title>
             </Head>
