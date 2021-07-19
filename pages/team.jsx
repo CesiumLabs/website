@@ -45,7 +45,7 @@ export default class Team extends Component {
                             </div>
                             <div className="flex flex-wrap -m-4">
                                 {this.state.staffs?.length ? (
-                                    this.state.staffs.sort((a, b) => a.username.charCodeAt() - b.username.charCodeAt()).map((m, i) => {
+                                    this.state.staffs.sort((a, b) => a.localeCompare(b)).map((m, i) => {
                                         return (
                                             <Card
                                                 key={i}
