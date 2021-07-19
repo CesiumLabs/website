@@ -52,7 +52,7 @@ export default class Team extends Component {
                                                 image={!m.avatar.includes("/embed/") ? m.avatar.replace(".png", ".webp") : m.avatar}
                                                 title={m.username}
                                                 uid={m.id}
-                                                description={m.id === "735446893152305192" ? "Founder" : m.admin ? "Administrator" : "Moderator"}
+                                                description={m.id === "735446893152305192" ? "Founder" : m.admin ? "Administrator" : m.dev ? "Developer" : "Moderator"}
                                             />
                                         )
                                     })

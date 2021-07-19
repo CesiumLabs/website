@@ -26,7 +26,7 @@ export default function Card({ image, description, title, uid }) {
                 <h2 className="text-lg  font-medium title-font mb-2">{title ?? "Card"}</h2>
 
                 <div className="text-center mt-2 leading-none flex justify-between w-full">
-                    <span className=" mr-3 inline-flex items-center leading-none text-sm py-1 ">{description}</span>
+                    <span className=" mr-3 inline-flex items-center leading-none text-sm py-1">{description}</span>
                 </div>
             </div>
         </div>
