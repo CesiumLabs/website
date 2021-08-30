@@ -5,6 +5,7 @@ module.exports = {
         { label: "Team", path: "/team", external: false },
         { label: "Projects", path: "/projects", external: false },
         { label: "API", path: "https://api.snowflakedev.org", external: true },
+        { label: "Documentation", path: "https://docs.snowflakedev.org", external: false },
         {
             label: "Discord",
             path: "https://discord.gg/uqB8kxh",
