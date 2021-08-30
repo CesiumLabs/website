@@ -4,22 +4,6 @@ import { Component } from "react";
 export default class Home extends Component {
     constructor(...props) {
         super(...props);
-
-        this.state = {
-            video: "https://www.youtube.com/embed/SYKT8r4fSCA?controls=1&showinfo=0&rel=0",
-        };
-    }
-
-    componentDidMount() {
-        fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`)}`)
-            .then((res) => res.json())
-            .then((data) => {
-                const videoData = data.items[0];
-                const id = videoData.link.substr(videoData.link.indexOf("=") + 1);
-                const videoURL = `https://youtube.com/embed/${id}?controls=1&showinfo=0&rel=0`;
-                this.setState({ video: videoURL });
-            })
-            .catch((e) => {});
     }
 
     render() {
@@ -92,9 +76,9 @@ export default class Home extends Component {
                     </div>
                     <div className="py-10">
                         <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl py-3">
-                            Latest <span className="blurple-txt">Video</span>
+                            Discord <span className="blurple-txt">Widget</span>
                         </h2>
-                        <iframe className="mx-auto" src={this.state.video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ width: "80%", height: "65vh" }}></iframe>
+                        <iframe className="mx-auto w-full h-screen" src="https://canary.discord.com/widget?id=480939855476686849&theme=dark" allowTransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                 </div>
             </div>

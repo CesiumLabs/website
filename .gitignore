@@ -4,7 +4,7 @@ yarn.lock
 
 public/sw.js
 public/sw.js.map
-public/workbox-6b19f60b.js
-public/workbox-6b19f60b.js.map
+public/workbox-*.js
+public/workbox-*.js.map
 
 .env
