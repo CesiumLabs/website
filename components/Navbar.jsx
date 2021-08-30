@@ -11,7 +11,7 @@ export default function Navbar() {
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <Link href="/">
                         <a className="text-3xl font-bold leading-none">
-                            <img className="h-12" src="/images/logo.png" alt="logo" width="auto" />
+                            <img className="h-12" src="/images/logotrans.png" alt="logo" width="auto" />
                         </a>
                     </Link>
                     <div className="lg:hidden">
@@ -59,7 +59,7 @@ export default function Navbar() {
                     <div className="flex items-center mb-8">
                         <Link href="/">
                             <a className="mr-auto text-3xl font-bold leading-none">
-                                <img className="h-10" src="/images/logo.png" alt="logo" width="auto" />
+                                <img className="h-10" src="/images/logotrans.png" alt="logo" width="auto" />
                             </a>
                         </Link>
                         <button className="navbar-close" onClick={() => document.getElementById("mobileNav").classList.add("hidden")}>
