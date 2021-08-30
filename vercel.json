@@ -3,6 +3,18 @@
         {
             "src": "/arc-sw.js",
             "dest": "https://arc.io/arc-sw.js"
+        },
+        {
+            "src": "/discord",
+            "dest": "https://discord.gg/uqB8kxh"
+        },
+        {
+            "src": "/login",
+            "dest": "/api/auth/signin"
+        },
+        {
+            "src": "/logout",
+            "dest": "/api/auth/signout"
         }
     ]
 }

@@ -10,6 +10,15 @@ export default function Footer() {
                 </h1>
                 <p className="text-center text-gray-300">Community of Developers and Creators.</p>
                 <p className="text-center text-gray-300 mt-10">
+                    <img
+                        src="/images/vercel.svg"
+                        alt="Powered by Vercel"
+                        className="mx-auto mb-4 cursor-pointer"
+                        draggable="false"
+                        onClick={() => {
+                            window.location.href = "https://vercel.com/?utm_source=snowflakedev&utm_campaign=oss";
+                        }}
+                    />
                     © <a href={LINKS.GITHUB}>SnowflakeDev Community ❄</a> - {new Date().getFullYear()}
                 </p>
             </div>
