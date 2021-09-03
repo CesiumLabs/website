@@ -56,11 +56,10 @@ module.exports = {
             description: "Simple package to make youtube search.",
         },
         {
-            name: "JSON SQL Query",
-            github: "DevSnowflake/json-sql-query",
-            npm: "json-sql-query",
-            docs: "https://github.com/DevSnowflake/json-sql-query",
-            description: "Execute CRUD operations on JSON using SQL query!",
+            name: "Yukitoki",
+            github: "DevSnowflake/yukitoki",
+            docs: "https://docs.snowflakedev.org",
+            description: "Customizable documentation rendering website written in Svelte.",
         },
         {
             name: "Discord YTDL Core",
@@ -90,6 +89,12 @@ module.exports = {
             docs: "https://eco.js.org",
             description: "Simple and powerful economy framework for Discord bots.",
         },
+        {
+            name: "Lowdash",
+            github: "DevSnowflake/lowdash",
+            docs: "https://github.com/DevSnowflake/lowdash",
+            description: "A Python implementation of JavaScript Lodash library.",
+        }
     ],
     YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
     LOGIN_URL: `https://discord.com/api/oauth2/authorize?client_id=652874564098850826&redirect_uri=https%3A%2F%2Fsnowflakedev.org%2Flogin&response_type=code&scope=identify`,
