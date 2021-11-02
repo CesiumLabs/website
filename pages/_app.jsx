@@ -32,6 +32,7 @@ export default function Application({ Component, pageProps }) {
                 <meta property="twitter:description" content="Lets code together in language we love" />
                 <meta property="twitter:image" content="/images/logo.png" />
 
+                <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "875d5bef213248eab3f9a6c3c1c3d546"}'></script>
                 <script async src="https://arc.io/widget.min.js#pz4jzKoL"></script>
 
                 <title>SnowflakeDev Community ❄</title>
