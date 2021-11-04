@@ -98,7 +98,7 @@ module.exports = {
         {
             name:"Code Examples",
             github: "DevSnowflake/code-examples",
-            docs: "https://codes.devsnowflake.org",
+            docs: "https://codes.snowflakedev..org",
             description:"Short code snippets written by our open source community!",
         }
     ],
