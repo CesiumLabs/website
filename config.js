@@ -94,6 +94,12 @@ module.exports = {
             github: "DevSnowflake/lowdash",
             docs: "https://github.com/DevSnowflake/lowdash",
             description: "A Python implementation of JavaScript Lodash library.",
+        },
+        {
+            name:"Code Examples",
+            github: "DevSnowflake/code-examples",
+            docs: "https://codes.devsnowflake.org",
+            description:"Short code snippets written by our open source community!",
         }
     ],
     YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
