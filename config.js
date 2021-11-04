@@ -100,7 +100,13 @@ module.exports = {
             github: "DevSnowflake/code-examples",
             docs: "https://codes.snowflakedev.org",
             description:"Short code snippets written by our open source community!",
-        }
+        },
+        {
+            name: "Frost",
+            github: "DevSnowflake/frost",
+            docs: "https://frost.js.org",
+            description: "🚀 Static site generator",
+        },
     ],
     YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
     LOGIN_URL: `https://discord.com/api/oauth2/authorize?client_id=652874564098850826&redirect_uri=https%3A%2F%2Fsnowflakedev.org%2Flogin&response_type=code&scope=identify`,
