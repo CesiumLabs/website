@@ -1,5 +1,5 @@
 # Website
-Official website of **[CeisumLab Community](https://cesiumlabs.xyz)** written in **[Next.js](https://nextjs.org)**.
+Official website of **[Ceisum Labs](https://cesiumlabs.xyz)** written in **[Next.js](https://nextjs.org)**.
 
 # Who are we?
 

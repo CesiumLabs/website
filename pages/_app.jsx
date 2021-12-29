@@ -18,24 +18,24 @@ export default function Application({ Component, pageProps }) {
                 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
                 <meta property="og:url" content="https://cesiumlabs.xyz" />
-                <meta property="og:title" content="CesiumLab Community" />
+                <meta property="og:title" content="Cesium Labs" />
                 <meta property="og:description" content="Lets code together in language we love" />
                 <meta property="og:image" content="/images/logo.png" />
 
                 <meta property="url" content="https://cesiumlabs.xyz" />
-                <meta property="title" content="CesiumLab Community" />
+                <meta property="title" content="Cesium Labs" />
                 <meta name="description" content="Lets code together in language we love" />
                 <meta property="image" content="/images/logo.png" />
 
                 <meta property="twitter:url" content="https://cesiumlabs.xyz" />
-                <meta property="twitter:title" content="CesiumLab Community" />
+                <meta property="twitter:title" content="Cesium Labs" />
                 <meta property="twitter:description" content="Lets code together in language we love" />
                 <meta property="twitter:image" content="/images/logo.png" />
 
                 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '875d5bef213248eab3f9a6c3c1c3d546'}"></script>
                 <script async src="https://arc.io/widget.min.js#pz4jzKoL"></script>
 
-                <title>CesiumLab Community</title>
+                <title>Cesium Labs</title>
             </Head>
             <Provider options={{ clientMaxAge: 0, keepAlive: 0 }} session={pageProps.session}>
                 <Component {...pageProps} />
