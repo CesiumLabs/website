@@ -1,19 +1,19 @@
 # Website
-Official website of **[SnowflakeDev Community ❄](https://snowflakedev.org)** written in **[Next.js](https://nextjs.org)**.
+Official website of **[CeisumLab Community](https://cesiumlabs.xyz)** written in **[Next.js](https://nextjs.org)**.
 
 # Who are we?
 
 We are a community of developers. We make different type of projects, most of them being open-source.
 Some of our popular projects are:
-- **[Canvacord](https://github.com/DevSnowflake/canvacord)**
+- **[Canvacord](https://github.com/CesiumLabs/canvacord)**
   - Beginner friendly tool for image manipulation.
-- **[QuickMongo](https://github.com/DevSnowflake/QuickMongo)**
+- **[QuickMongo](https://github.com/CesiumLabs/QuickMongo)**
   - Quick mongodb wrapper for beginners.
-- **[youtube-sr](https://github.com/DevSnowflake/youtube-sr)**
+- **[youtube-sr](https://github.com/CesiumLabs/youtube-sr)**
   - Make youtube search easily via nodejs or deno.
-- **[soundcloud-scraper](https://github.com/DevSnowflake/soundcloud-scraper)**
+- **[soundcloud-scraper](https://github.com/CesiumLabs/soundcloud-scraper)**
   - Get data from soundcloud easily.
-- **[Yukitoki](https://github.com/DevSnowflake/Yukitoki)**
+- **[Yukitoki](https://github.com/CesiumLabs/Yukitoki)**
   - Customizable documentation website.
 
 # Special Thanks
