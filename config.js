@@ -110,5 +110,5 @@ module.exports = {
     ],
     YOUTUBE_CHANNEL_ID: "UCaxSqb45cc6Ero_RkMEId1Q",
     LOGIN_URL: `https://discord.com/api/oauth2/authorize?client_id=652874564098850826&redirect_uri=https%3A%2F%2Fcesiumlabs.xyz%2Flogin&response_type=code&scope=identify`,
-    LOGIN_API: "https://backend.cesiumlabs.xyz/api/authorize",
+    LOGIN_API: "https://backend.snowflakedev.cf/api/authorize",
 };
