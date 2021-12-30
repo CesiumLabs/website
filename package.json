@@ -1,7 +1,7 @@
 {
-  "name": "snowflakedev-website",
+  "name": "cesiumlab-website",
   "version": "2.0.0",
-  "description": "Official website of SnowflakeDev Community",
+  "description": "Official website of Cesium Labs",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -13,19 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevSnowflake/website.git"
+    "url": "git+https://github.com/CesiumLabs/website.git"
   },
   "keywords": [
-    "snowflake",
-    "snowflakedev-community",
+    "cesiumlab",
     "website"
   ],
   "author": "Snowflake107",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DevSnowflake/website/issues"
+    "url": "https://github.com/CesiumLabs/website/issues"
   },
-  "homepage": "https://github.com/DevSnowflake/website#readme",
+  "homepage": "https://github.com/CesiumLabs/website#readme",
   "dependencies": {
     "next": "^11.1.0",
     "next-auth": "^3.29.0",
