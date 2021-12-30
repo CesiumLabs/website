@@ -64,13 +64,6 @@ export default class Home extends Component {
                                 </h2>
                                 <p className="mt-2 text-sm text-gray-500 md:text-base">We are a community focused on programming.</p>
                                 <p className="text-sm text-gray-500 md:text-base">We help in Discord Bot Development, Web Development, Discord Bot Hosting, etc.</p>
-                                <p className="text-sm text-gray-500 md:text-base">
-                                    We also make{" "}
-                                    <a className="blurple-txt font-semibold cursor-pointer" href={`https://www.youtube.com/channel/${YOUTUBE_CHANNEL_ID}`}>
-                                        YouTube
-                                    </a>{" "}
-                                    videos related to Discord Bot Development.
-                                </p>
                             </div>
                         </div>
                     </div>

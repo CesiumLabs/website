@@ -3,14 +3,14 @@ import "tailwindcss/tailwind.css";
 import "../public/styles/global.css";
 import "../public/styles/loader.css";
 import { Provider } from "next-auth/client";
+import Script from "next/script";
 
 export default function Application({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <link rel="manifest" href="/manifest.json" />
-                <meta name="theme-color" content="#4D5E94" />
-                <meta name="apple-mobile-web-app-status-bar" content="#4D5E94" />
+                <meta name="theme-color" content="#20245D" />
+                <meta name="apple-mobile-web-app-status-bar" content="#20245D" />
                 <link rel="apple-touch-icon" href="/images/logosm.png" />
                 <link rel="shortcut icon" href="/images/logotrans.png" type="image/x-icon" />
 
@@ -32,7 +32,7 @@ export default function Application({ Component, pageProps }) {
                 <meta property="twitter:description" content="Lets code together in language we love" />
                 <meta property="twitter:image" content="/images/logo.png" />
 
-                <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '875d5bef213248eab3f9a6c3c1c3d546'}"></script>
+                <Script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '875d5bef213248eab3f9a6c3c1c3d546'}"></Script>
                 <script async src="https://arc.io/widget.min.js#pz4jzKoL"></script>
 
                 <title>Cesium Labs</title>
