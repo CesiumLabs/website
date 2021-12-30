@@ -32,11 +32,11 @@ export default function Application({ Component, pageProps }) {
                 <meta property="twitter:description" content="Lets code together in language we love" />
                 <meta property="twitter:image" content="/images/logo.png" />
 
-                <Script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '875d5bef213248eab3f9a6c3c1c3d546'}"></Script>
                 <script async src="https://arc.io/widget.min.js#pz4jzKoL"></script>
 
                 <title>Cesium Labs</title>
             </Head>
+            <Script src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '875d5bef213248eab3f9a6c3c1c3d546'}"></Script>
             <Provider options={{ clientMaxAge: 0, keepAlive: 0 }} session={pageProps.session}>
                 <Component {...pageProps} />
             </Provider>

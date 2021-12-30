@@ -9,20 +9,20 @@ body {
 }
 
 .blurple {
-  background-color: #5865F2 !important;
+  background-color: #20245D !important;
 }
 
 .blurple-txt {
-  color: #5865F2 !important;
+  color: #2d3285 !important;
 }
 
 .blurple:hover {
-  background-color: #4250eb !important;
+  background-color: #252A72 !important;
 }
 
 ::selection {
   color: #FFFFFF !important;
-  background: #5865F2 !important;
+  background: #20245D !important;
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +43,7 @@ body {
 }
 
 .coverpg {
-    background-image: url("/images/logo.png");
+    background-image: url("/images/banner.png");
     background-size: cover;
     background-position: center;
 }

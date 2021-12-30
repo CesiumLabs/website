@@ -96,10 +96,10 @@ module.exports = {
             description: "A Python implementation of JavaScript Lodash library.",
         },
         {
-            name:"Code Examples",
+            name: "Code Examples",
             github: "CesiumLabs/code-examples",
             docs: "https://codes.cesiumlabs.xyz",
-            description:"Short code snippets written by our open source community!",
+            description: "Short code snippets written by our open source community!",
         },
         {
             name: "Frost",

@@ -1,4 +1,4 @@
-import { LINKS, YOUTUBE_CHANNEL_ID } from "../config";
+import { LINKS } from "../config";
 import { Component } from "react";
 
 export default class Home extends Component {
@@ -71,7 +71,7 @@ export default class Home extends Component {
                         <h2 className="text-3xl font-semibold text-gray-200 md:text-4xl py-3">
                             Discord <span className="blurple-txt">Widget</span>
                         </h2>
-                        <iframe className="mx-auto w-full h-screen" src="https://canary.discord.com/widget?id=480939855476686849&theme=dark" allowTransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        <iframe className="mx-auto w-full h-screen" src="https://canary.discord.com/widget?id=480939855476686849&theme=dark" allowTransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                 </div>
             </div>
